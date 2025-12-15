@@ -41,7 +41,7 @@ terraform {
 
 
 
-# this is for github actions deployment
+# (this is for github actions deployment)
 #for exsisting plays
 # git status
 # git add assets/index.html
