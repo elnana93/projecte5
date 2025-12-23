@@ -1,11 +1,7 @@
 resource "aws_iam_user" "admin_user" {
   name          = "user_admin1"
   force_destroy = true
-  tags = {
-    Project     = "ProjectE5"
-    Environment = "Dev"
-    Owner       = "UserAdmin1"
-  }
+  
 }
 
 resource "aws_iam_user_policy_attachment" "admin_attach" {
