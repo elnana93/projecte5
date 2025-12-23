@@ -1,6 +1,22 @@
 provider "aws" {
   region = "us-west-2"
+  default_tags {
+    tags = {
+      Project     = "ProjectE5"
+      Environment = "Dev"
+      Owner       = "UserAdmin1"
+    }
+  }
 }
+
+
+/* 
+
+
+ */
+
+
+
 
 terraform {
   required_providers {

@@ -1,6 +1,11 @@
 resource "aws_iam_user" "admin_user" {
   name          = "user_admin1"
   force_destroy = true
+  tags = {
+    Project     = "ProjectE5"
+    Environment = "Dev"
+    Owner       = "UserAdmin1"
+  }
 }
 
 resource "aws_iam_user_policy_attachment" "admin_attach" {
@@ -17,6 +22,25 @@ resource "aws_iam_user_login_profile" "admin_login" {
 
 
 data "aws_caller_identity" "current" {}
+
+
+# "its official" - 
+
+# terraform output -raw admin_user_encrypted_password | base64 --decode | gpg --decrypt -q
+
+# Output the encrypted password "Hell YEAH!!!!!!!"
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*
