@@ -47,5 +47,5 @@ terraform {
 # git status
 # git add assets/index.html
 # git add .github/workflows/deploy.yml
-# git commit -m "Lets gooo"
+# git commit -m "Removed Tags"
 # git push
